@@ -25,6 +25,7 @@ namespace Carros
             Carros carros = new Carros();
             Garagem garagem = new Garagem();
             LavaJato lavaJato = new LavaJato();
+            string placa = null;
 
             int opc = 0;
             while(opc != 7)
@@ -37,7 +38,7 @@ namespace Carros
                     case 1:
                         Console.Clear();
                         Console.Write("Entre com a placa no carro: ");
-                        string placa = Console.ReadLine();
+                        placa = Console.ReadLine();
                         if (carros.buscarCarro(placa, carros.inicio) != null)
                         {
                             garagem.guardarCarro(placa);
@@ -67,6 +68,9 @@ namespace Carros
 
                     case 3:
                         Console.Clear();
+                        Console.Write("Entre com a placa no carro: ");
+                        placa = Console.ReadLine();
+                        garagem.enviarLavaJato(placa);
                         Console.ReadKey();
                         break;
 

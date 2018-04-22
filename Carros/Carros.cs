@@ -25,7 +25,7 @@ namespace Carros
         {
             if (aux == null)
                 return null;
-            else if (aux.placa == placa)
+            else if (aux.placa.Equals(placa))
                 return aux;
             else
                 return buscarCarro(placa, aux.proximo);
