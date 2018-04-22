@@ -23,7 +23,8 @@ namespace Carros
         static void Main(string[] args)
         {
             Carros carros = new Carros();
-
+            Garagem garagem = new Garagem();
+            LavaJato lavaJato = new LavaJato();
 
             int opc = 0;
             while(opc != 7)
@@ -35,6 +36,26 @@ namespace Carros
                 {
                     case 1:
                         Console.Clear();
+                        Console.Write("Entre com a placa no carro: ");
+                        string placa = Console.ReadLine();
+                        if (carros.buscarCarro(placa, carros.inicio) != null)
+                        {
+                            garagem.guardarCarro(placa);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Carro ainda não cadastrado.");                            
+                            Console.Write("Entre com o modelo do carro: ");
+                            string modelo = Console.ReadLine();
+                            Console.Write("Entre com a cor do carro: ");
+                            string cor = Console.ReadLine();
+                            Console.Write("Entre com o nome do proprietario: ");
+                            string nome = Console.ReadLine();
+                            Console.Write("Entre com o ano de fabricação: ");
+                            int ano = int.Parse(Console.ReadLine());
+                            carros.cadastrarCarro(placa,modelo,cor,nome,ano);
+                            garagem.guardarCarro(placa);
+                        }
                         Console.ReadKey();
                         break;
 

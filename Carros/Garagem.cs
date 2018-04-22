@@ -15,5 +15,14 @@ namespace Carros
         }
 
         public elemento topo;
+
+        public void guardarCarro(string placa)
+        {
+            elemento novo = new elemento();
+            novo.placa = placa;
+            novo.proximo = topo;
+            topo = novo;
+            Console.WriteLine("Carro colocado na garagem.");
+        }
     }
 }

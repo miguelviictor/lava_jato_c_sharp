@@ -20,5 +20,45 @@ namespace Carros
         }
 
         public elemento inicio = null;
+
+        public elemento buscarCarro(string placa, elemento aux)
+        {
+            if (aux == null)
+                return null;
+            else if (aux.placa == placa)
+                return aux;
+            else
+                return buscarCarro(placa, aux.proximo);
+        }
+
+        public void cadastrarCarro(string placa, string modelo, string cor,
+            string proprietario, int ano)
+        {
+            if (inicio != null)
+            {
+                elemento aux = new elemento();
+                aux.placa = placa;
+                aux.modelo = modelo;
+                aux.cor = cor;
+                aux.nomeProprietario = proprietario;
+                aux.anoFabricacao = ano;
+                aux.qtdLavagens = 0;
+                aux.proximo = inicio;
+                inicio = aux;
+            }
+            else
+            {
+                inicio = new elemento();
+                inicio.placa = placa;
+                inicio.modelo = modelo;
+                inicio.cor = cor;
+                inicio.nomeProprietario = proprietario;
+                inicio.anoFabricacao = ano;
+                inicio.qtdLavagens = 0;
+                inicio.proximo = null;
+            }        
+            Console.WriteLine("Carro cadastrado com sucesso.");
+        }
+
     }
 }
