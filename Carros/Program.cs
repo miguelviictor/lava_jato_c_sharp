@@ -61,6 +61,7 @@ namespace Carros
 
                     case 2:
                         Console.Clear();
+                        garagem.exibirCarros(garagem.topo);
                         Console.ReadKey();
                         break;
 

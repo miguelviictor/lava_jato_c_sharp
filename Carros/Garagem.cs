@@ -15,6 +15,7 @@ namespace Carros
         }
 
         public elemento topo;
+        Carros carros = new Carros();
 
         public void guardarCarro(string placa)
         {
@@ -23,6 +24,12 @@ namespace Carros
             novo.proximo = topo;
             topo = novo;
             Console.WriteLine("Carro colocado na garagem.");
+        }
+
+        public void exibirCarros(elemento aux)
+        {
+            if (aux != null)
+                carros.exibirCarro(carros.buscarCarro(aux.placa, carros.inicio));
         }
     }
 }

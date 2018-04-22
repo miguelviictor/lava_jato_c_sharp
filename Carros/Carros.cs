@@ -60,5 +60,16 @@ namespace Carros
             Console.WriteLine("Carro cadastrado com sucesso.");
         }
 
+        public void exibirCarro(elemento aux)
+        {
+            Console.WriteLine("Placa.................: {0}",aux.placa);
+            Console.WriteLine("Modelo................: {0})",aux.placa);
+            Console.WriteLine("Cor...................: {0}",aux.cor);
+            Console.WriteLine("Proprietario..........: {0}",aux.nomeProprietario);
+            Console.WriteLine("Ano de fabricação.....: {0}",aux.anoFabricacao);
+            Console.WriteLine("Quantidade de lavagem.: {0}",aux.qtdLavagens);
+            Console.WriteLine("======================================================");
+        }
+
     }
 }
