@@ -68,7 +68,7 @@ namespace Carros
             Console.WriteLine("Proprietario..........: {0}",aux.nomeProprietario);
             Console.WriteLine("Ano de fabricação.....: {0}",aux.anoFabricacao);
             Console.WriteLine("Quantidade de lavagem.: {0}",aux.qtdLavagens);
-            Console.WriteLine("======================================================");
+            Console.WriteLine("===========================================================");
         }
 
     }

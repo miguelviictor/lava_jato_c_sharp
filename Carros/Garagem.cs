@@ -30,7 +30,11 @@ namespace Carros
         public void exibirCarros(elemento aux)
         {
             if (aux != null)
+            {
                 carros.exibirCarro(carros.buscarCarro(aux.placa, carros.inicio));
+                exibirCarros(aux.proximo);
+            }
+                
         }
 
         public elemento buscarCarro(string placa, elemento aux)

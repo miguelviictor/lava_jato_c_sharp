@@ -76,6 +76,7 @@ namespace Carros
 
                     case 4:
                         Console.Clear();
+                        lavaJato.exibirCarros(lavaJato.inicio);
                         Console.ReadKey();
                         break;
 
