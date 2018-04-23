@@ -71,5 +71,14 @@ namespace Carros
             Console.WriteLine("===========================================================");
         }
 
+        public void exibirTodos(elemento aux)
+        {
+            if(aux != null)
+            {
+                exibirCarro(aux);
+                exibirTodos(aux.proximo);
+            }
+        }
+
     }
 }

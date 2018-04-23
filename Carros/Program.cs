@@ -87,6 +87,7 @@ namespace Carros
 
                     case 6:
                         Console.Clear();
+                        carros.exibirTodos(carros.inicio);
                         Console.ReadKey();
                         break;
 
