@@ -14,8 +14,7 @@ namespace Carros
             public elemento proximo;
         }
 
-        public elemento topo;    
-        LavaJato lavaJato = new LavaJato();
+        public elemento topo;            
 
         public void guardarCarro(string placa)
         {
@@ -46,11 +45,12 @@ namespace Carros
                 return buscarCarro(placa, aux.proximo);
         }
 
-        public void enviarLavaJato(string placa)
+        public bool enviarLavaJato(string placa)
         {
             elemento aux = buscarCarro(placa, topo);
             if(aux != null)
             {
+                Console.Clear();
                 elemento carrosRemovidos = new elemento();    
                 
                 while(topo != null)
@@ -75,14 +75,13 @@ namespace Carros
                         }
                     }
                     else
-                    {
-                        lavaJato.colocarFila(topo.placa);
-                        Console.WriteLine("Carro da placa {0} removido da garagem.\n" +
-                            "e enviado para o lava jato.", topo.placa);
-                        topo = topo.proximo;
+                    {                        
+                        Console.WriteLine("\nCarro da placa {0} removido da garagem" +
+                            "\ne enviado para o lava jato.\n", topo.placa);
+                        topo = topo.proximo;                       
                         break;
                     }
-                }
+                }      
 
                 while(carrosRemovidos != null)
                 {
@@ -95,16 +94,29 @@ namespace Carros
                     }
                     else
                     {
-                        elemento aux1 = new elemento();
-                        aux1.placa = carrosRemovidos.placa;
-                        aux1.proximo = topo;
-                        topo = aux1;
-                        carrosRemovidos = carrosRemovidos.proximo;
-                        Console.WriteLine("Carro da placa {0} colocado na garagem.", topo.placa);
+                        if (carrosRemovidos.placa != null)
+                        {
+                            elemento aux1 = new elemento();
+                            aux1.placa = carrosRemovidos.placa;
+                            aux1.proximo = topo;
+                            topo = aux1;
+                            carrosRemovidos = carrosRemovidos.proximo;
+                            Console.WriteLine("Carro da placa {0} colocado na garagem.", topo.placa);
+                        }
+                        else
+                        {
+                            carrosRemovidos = carrosRemovidos.proximo;
+                        }
                     }
-                }                         
-            }else
+                }
+                return true;
+            }
+            else
+            {
                 Console.WriteLine("Este carro não se encontra na garagem.");
+                return false;
+            }
+                
         }
     }
 }

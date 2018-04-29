@@ -63,7 +63,7 @@ namespace Carros
         public void exibirCarro(elemento aux)
         {
             Console.WriteLine("Placa.................: {0}",aux.placa);
-            Console.WriteLine("Modelo................: {0})",aux.placa);
+            Console.WriteLine("Modelo................: {0}",aux.modelo);
             Console.WriteLine("Cor...................: {0}",aux.cor);
             Console.WriteLine("Proprietario..........: {0}",aux.nomeProprietario);
             Console.WriteLine("Ano de fabricação.....: {0}",aux.anoFabricacao);

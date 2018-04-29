@@ -70,7 +70,8 @@ namespace Carros
                         Console.Clear();
                         Console.Write("Entre com a placa no carro: ");
                         placa = Console.ReadLine();
-                        garagem.enviarLavaJato(placa);
+                        if (garagem.enviarLavaJato(placa))
+                            lavaJato.colocarFila(placa);
                         Console.ReadKey();
                         break;
 
