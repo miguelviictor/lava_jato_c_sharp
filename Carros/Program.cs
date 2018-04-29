@@ -22,7 +22,7 @@ namespace Carros
 
         static void Main(string[] args)
         {
-            Carros carros = new Carros();
+            
             Garagem garagem = new Garagem();
             LavaJato lavaJato = new LavaJato();
             string placa = null;
@@ -39,7 +39,7 @@ namespace Carros
                         Console.Clear();
                         Console.Write("Entre com a placa no carro: ");
                         placa = Console.ReadLine();
-                        if (carros.buscarCarro(placa, carros.inicio) != null)
+                        if (AuxCarro.Carros.buscarCarro(placa, AuxCarro.Carros.inicio) != null)
                         {
                             garagem.guardarCarro(placa);
                         }
@@ -54,7 +54,7 @@ namespace Carros
                             string nome = Console.ReadLine();
                             Console.Write("Entre com o ano de fabricação: ");
                             int ano = int.Parse(Console.ReadLine());
-                            carros.cadastrarCarro(placa,modelo,cor,nome,ano);
+                            AuxCarro.Carros.cadastrarCarro(placa,modelo,cor,nome,ano);
                             garagem.guardarCarro(placa);
                         }
                         Console.ReadKey();
@@ -87,7 +87,7 @@ namespace Carros
 
                     case 6:
                         Console.Clear();
-                        carros.exibirTodos(carros.inicio);
+                        AuxCarro.Carros.exibirTodos(AuxCarro.Carros.inicio);
                         Console.ReadKey();
                         break;
 

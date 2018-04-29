@@ -1,0 +1,7 @@
+D:\Documentos da puc\3° - AED\Carros\Carros\Carros\bin\Debug\Carros.exe.config
+D:\Documentos da puc\3° - AED\Carros\Carros\Carros\bin\Debug\Carros.exe
+D:\Documentos da puc\3° - AED\Carros\Carros\Carros\bin\Debug\Carros.pdb
+D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.csprojResolveAssemblyReference.cache
+D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.csproj.CoreCompileInputs.cache
+D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.exe
+D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.pdb

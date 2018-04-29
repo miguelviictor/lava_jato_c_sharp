@@ -14,8 +14,7 @@ namespace Carros
             public elemento proximo;
         }
 
-        public elemento topo;
-        Carros carros = new Carros();
+        public elemento topo;    
         LavaJato lavaJato = new LavaJato();
 
         public void guardarCarro(string placa)
@@ -31,7 +30,7 @@ namespace Carros
         {
             if (aux != null)
             {
-                carros.exibirCarro(carros.buscarCarro(aux.placa, carros.inicio));
+                AuxCarro.Carros.exibirCarro(AuxCarro.Carros.buscarCarro(aux.placa, AuxCarro.Carros.inicio));
                 exibirCarros(aux.proximo);
             }
                 

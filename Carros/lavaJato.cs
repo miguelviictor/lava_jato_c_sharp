@@ -16,7 +16,7 @@ namespace Carros
 
         public elemento inicio = null;
         public elemento fim = null;
-        Carros carros = new Carros();
+  
 
         public void colocarFila(string placa)
         {
@@ -37,7 +37,7 @@ namespace Carros
         {
             if (aux != null)
             {
-                carros.exibirCarro(carros.buscarCarro(aux.placa, carros.inicio));
+                AuxCarro.Carros.exibirCarro(AuxCarro.Carros.buscarCarro(aux.placa, AuxCarro.Carros.inicio));
                 exibirCarros(aux.proximo);
             }
         }

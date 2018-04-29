@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuxCarro.cs" />
     <Compile Include="Carros.cs" />
     <Compile Include="Garagem.cs" />
     <Compile Include="LavaJato.cs" />
