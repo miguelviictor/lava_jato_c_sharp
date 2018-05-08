@@ -31,8 +31,7 @@ namespace Carros
             {
                 AuxCarro.Carros.exibirCarro(AuxCarro.Carros.buscarCarro(aux.placa, AuxCarro.Carros.inicio));
                 exibirCarros(aux.proximo);
-            }
-                
+            }                
         }
 
         public elemento buscarCarro(string placa, elemento aux)
@@ -85,14 +84,7 @@ namespace Carros
 
                 while(carrosRemovidos != null)
                 {
-                    if(topo == null)
-                    {
-                        topo.placa = carrosRemovidos.placa;
-                        topo.proximo = null;
-                        carrosRemovidos = carrosRemovidos.proximo;
-                        Console.WriteLine("Carro da placa {0} colocado na garagem.",topo.placa);
-                    }
-                    else
+                    if(topo!=null)
                     {
                         if (carrosRemovidos.placa != null)
                         {
@@ -107,6 +99,13 @@ namespace Carros
                         {
                             carrosRemovidos = carrosRemovidos.proximo;
                         }
+                    }
+                    else
+                    {
+                        topo.placa = carrosRemovidos.placa;
+                        topo.proximo = null;
+                        carrosRemovidos = carrosRemovidos.proximo;
+                        Console.WriteLine("Carro da placa {0} colocado na garagem.", topo.placa);
                     }
                 }
                 return true;

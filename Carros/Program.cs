@@ -68,7 +68,7 @@ namespace Carros
 
                     case 3:
                         Console.Clear();
-                        Console.Write("Entre com a placa no carro: ");
+                        Console.Write("Entre com a placa do carro: ");
                         placa = Console.ReadLine();
                         if (garagem.enviarLavaJato(placa))
                             lavaJato.colocarFila(placa);
@@ -83,6 +83,9 @@ namespace Carros
 
                     case 5:
                         Console.Clear();
+                        Console.Write("Entre com a placa do carro: ");
+                        placa = Console.ReadLine();
+                        lavaJato.atenderCarro(placa);
                         Console.ReadKey();
                         break;
 

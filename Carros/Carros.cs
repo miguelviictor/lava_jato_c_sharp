@@ -80,5 +80,25 @@ namespace Carros
             }
         }
 
+        public void adicionaLavagem(string placa, int n)
+        {
+            elemento auxx = buscarCarro(placa, inicio);
+            if (n ==1)
+            {               
+                auxx.qtdLavagens++;
+            }
+            else
+            {
+                auxx.qtdLavagens = 0;
+            }
+            
+        }
+
+        public int exibeQtdLavagens(string placa)
+        {
+            elemento auxx = buscarCarro(placa, inicio);
+            return auxx.qtdLavagens;
+        }
+
     }
 }

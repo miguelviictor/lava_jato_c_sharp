@@ -5,3 +5,10 @@ D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.csprojResol
 D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.csproj.CoreCompileInputs.cache
 D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.exe
 D:\Documentos da puc\3° - AED\Carros\Carros\Carros\obj\Debug\Carros.pdb
+C:\Users\Victor Miguel\Desktop\lavajato\lava_jato_c_sharp\Carros\bin\Debug\Carros.exe.config
+C:\Users\Victor Miguel\Desktop\lavajato\lava_jato_c_sharp\Carros\bin\Debug\Carros.exe
+C:\Users\Victor Miguel\Desktop\lavajato\lava_jato_c_sharp\Carros\bin\Debug\Carros.pdb
+C:\Users\Victor Miguel\Desktop\lavajato\lava_jato_c_sharp\Carros\obj\Debug\Carros.csprojResolveAssemblyReference.cache
+C:\Users\Victor Miguel\Desktop\lavajato\lava_jato_c_sharp\Carros\obj\Debug\Carros.csproj.CoreCompileInputs.cache
+C:\Users\Victor Miguel\Desktop\lavajato\lava_jato_c_sharp\Carros\obj\Debug\Carros.exe
+C:\Users\Victor Miguel\Desktop\lavajato\lava_jato_c_sharp\Carros\obj\Debug\Carros.pdb
